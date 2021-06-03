@@ -68,8 +68,6 @@ export default class Home extends Component {
     axios
       .delete(`${config.api_url}/product/${this.state.deleteId}`)
       .then((response) => {
-        console.log(response);
-
         this.setState((prevState) => {
           return {
             products: prevState.products.filter(
@@ -84,7 +82,6 @@ export default class Home extends Component {
 
   // handling radio change and calling sortProducts()
   handleRadioChange = (e) => {
-    console.log(e.target);
     this.setState((prevState) => {
       return {
         sortBy: e.target.value,
@@ -95,7 +92,6 @@ export default class Home extends Component {
 
   // sorting array by name or by count depends on value
   sortProducts = (array, value) => {
-    console.log(array);
     if (value === "name") {
       this.setState({
         products: array.sort((a, b) =>
