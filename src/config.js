@@ -1,4 +1,4 @@
-const api_url = "http://localhost:5000/api/";
+const api_url = "https://testtaskbackend.herokuapp.com/api/";
 
 const initialProduct = {
   imageUrl: "",

@@ -25,7 +25,6 @@ export default function CreateComment({ show, handleFormSubmit, onHide }) {
           validationSchema={createCommentSchema}
           onSubmit={(values, actions) => {
             handleFormSubmit(values);
-            console.log("hello formik");
           }}
         >
           {(props) => (

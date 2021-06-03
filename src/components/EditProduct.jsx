@@ -29,7 +29,6 @@ export default function EditProduct({
           initialValues={product}
           onSubmit={(values, actions) => {
             handleFormSubmit(values);
-            console.log("hello formik");
           }}
         >
           {(props) => (

@@ -22,7 +22,6 @@ export default class Home extends Component {
       .get(`${config.api_url}/product`)
       .then((response) => {
         this.setState({ products: response.data });
-        console.log(response.data);
       })
       .catch((error) => console.log(error));
   }
@@ -40,7 +39,6 @@ export default class Home extends Component {
         });
       })
       .catch((error) => console.log(error));
-    console.log(this.state.product);
   };
 
   // setting show to true to show modal window
